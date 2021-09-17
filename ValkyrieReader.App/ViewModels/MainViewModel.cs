@@ -11,9 +11,9 @@ using DevExpress.Mvvm.POCO;
 using DevExpress.Xpf.Core;
 using ValkyrieReader.Core;
 using Reddit;
+using Reddit.AuthTokenRetriever;
+using Reddit.AuthTokenRetriever.EventArgs;
 using ValkyrieReader.App.Views;
-using ValkyrieReader.Core.AuthTokenRetriever;
-using ValkyrieReader.Core.AuthTokenRetriever.EventArgs;
 
 namespace ValkyrieReader.App.ViewModels
 {

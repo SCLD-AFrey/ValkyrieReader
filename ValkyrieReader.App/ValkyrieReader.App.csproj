@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Samples\Reddit.NET\src\AuthTokenRetrieverLib\AuthTokenRetrieverLib.csproj" />
     <ProjectReference Include="..\..\..\Samples\Reddit.NET\src\Reddit.NET\Reddit.NET.csproj" />
     <ProjectReference Include="..\ValkyrieReader.Core\ValkyrieReader.Core.csproj" />
   </ItemGroup>

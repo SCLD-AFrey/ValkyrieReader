@@ -12,8 +12,6 @@ using System.Windows;
 using DevExpress.Mvvm.UI.Native.ViewGenerator;
 using Reddit;
 using ValkyrieReader.Core;
-using ValkyrieReader.Core.AuthTokenRetriever;
-using ValkyrieReader.Core.AuthTokenRetriever.EventArgs;
 
 namespace ValkyrieReader.App
 {
@@ -38,14 +36,9 @@ namespace ValkyrieReader.App
         
         public App()
         {
-            
-            
-            
-            
+
         }
 
-        
-        
     }
     
 }
