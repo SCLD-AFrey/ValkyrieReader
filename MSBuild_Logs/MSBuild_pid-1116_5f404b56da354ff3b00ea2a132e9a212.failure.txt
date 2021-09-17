@@ -1,0 +1,32 @@
+UNHANDLED EXCEPTIONS FROM PROCESS 1116:
+=====================
+9/16/2021 12:48:10 PM
+System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at Microsoft.Build.BackEnd.TargetEntry.ExecuteTarget(ITaskBuilder taskBuilder, BuildRequestEntry requestEntry, ProjectLoggingContext projectLoggingContext, CancellationToken cancellationToken) in Microsoft.Build.dll:token 0x6001449+0x0
+   at Microsoft.Build.BackEnd.TargetBuilder.ProcessTargetStack(ITaskBuilder taskBuilder) in Microsoft.Build.dll:token 0x6001431+0x491
+   at Microsoft.Build.BackEnd.TargetBuilder.BuildTargets(ProjectLoggingContext loggingContext, BuildRequestEntry entry, IRequestBuilderCallback callback, String[] targetNames, Lookup baseLookup, CancellationToken cancellationToken) in Microsoft.Build.dll:token 0x6001424+0x318
+   at Microsoft.Build.BackEnd.RequestBuilder.BuildProject() in Microsoft.Build.dll:token 0x6001415+0x370
+   at Microsoft.Build.BackEnd.RequestBuilder.BuildAndReport() in Microsoft.Build.dll:token 0x600140c+0x7d
+   at Microsoft.Build.BackEnd.RequestBuilder.RequestThreadProc(Boolean setThreadParameters) in Microsoft.Build.dll:token 0x600140b+0x7d
+===================
+9/16/2021 12:48:10 PM
+System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at NuGet.Frameworks.FrameworkNameProvider.GetVersionString(String framework, Version version)
+   at NuGet.Frameworks.NuGetFramework.GetShortFolderName(IFrameworkNameProvider mappings) in NuGet.Frameworks.dll:token 0x600013d+0x80
+   at NuGet.Frameworks.NuGetFramework.GetShortFolderName() in NuGet.Frameworks.dll:token 0x600013b+0x0
+   at Microsoft.NET.Build.Tasks.ProcessFrameworkReferences.ExecuteCore() in Microsoft.NET.Build.Tasks.dll:token 0x6000376+0x2f2
+   at Microsoft.NET.Build.Tasks.TaskBase.Execute() in Microsoft.NET.Build.Tasks.dll:token 0x60005b2+0x0
+   at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute() in Microsoft.Build.dll:token 0x6001602+0x3e
+   at Microsoft.Build.BackEnd.TaskBuilder.ExecuteInstantiatedTask(ITaskExecutionHost taskExecutionHost, TaskLoggingContext taskLoggingContext, TaskHost taskHost, ItemBucket bucket, TaskExecutionMode howToExecuteTask) in Microsoft.Build.dll:token 0x6001481+0x2b5
+   at Microsoft.Build.BackEnd.TaskBuilder.InitializeAndExecuteTask(TaskLoggingContext taskLoggingContext, ItemBucket bucket, IDictionary`2 taskIdentityParameters, TaskHost taskHost, TaskExecutionMode howToExecuteTask) in Microsoft.Build.dll:token 0x600147f+0xd4
+   at Microsoft.Build.BackEnd.TaskBuilder.ExecuteBucket(TaskHost taskHost, ItemBucket bucket, TaskExecutionMode howToExecuteTask, Dictionary`2 lookupHash) in Microsoft.Build.dll:token 0x600147b+0x242
+   at Microsoft.Build.BackEnd.TaskBuilder.ExecuteTask(TaskExecutionMode mode, Lookup lookup) in Microsoft.Build.dll:token 0x600147a+0x1b3
+   at Microsoft.Build.BackEnd.TaskBuilder.ExecuteTask(TargetLoggingContext loggingContext, BuildRequestEntry requestEntry, ITargetBuilderCallback targetBuilderCallback, ProjectTargetInstanceChild taskInstance, TaskExecutionMode mode, Lookup inferLookup, Lookup executeLookup, CancellationToken cancellationToken) in Microsoft.Build.dll:token 0x6001475+0x1e2
+   at Microsoft.Build.BackEnd.TargetEntry.ProcessBucket(ITaskBuilder taskBuilder, TargetLoggingContext targetLoggingContext, TaskExecutionMode mode, Lookup lookupForInference, Lookup lookupForExecution) in Microsoft.Build.dll:token 0x6001450+0xe7
+   at Microsoft.Build.BackEnd.TargetEntry.ExecuteTarget(ITaskBuilder taskBuilder, BuildRequestEntry requestEntry, ProjectLoggingContext projectLoggingContext, CancellationToken cancellationToken) in Microsoft.Build.dll:token 0x6001449+0x32a
+   at Microsoft.Build.BackEnd.TargetBuilder.ProcessTargetStack(ITaskBuilder taskBuilder) in Microsoft.Build.dll:token 0x6001431+0x491
+   at Microsoft.Build.BackEnd.TargetBuilder.BuildTargets(ProjectLoggingContext loggingContext, BuildRequestEntry entry, IRequestBuilderCallback callback, String[] targetNames, Lookup baseLookup, CancellationToken cancellationToken) in Microsoft.Build.dll:token 0x6001424+0x318
+   at Microsoft.Build.BackEnd.RequestBuilder.BuildProject() in Microsoft.Build.dll:token 0x6001415+0x370
+   at Microsoft.Build.BackEnd.RequestBuilder.BuildAndReport() in Microsoft.Build.dll:token 0x600140c+0x7d
+   at Microsoft.Build.BackEnd.RequestBuilder.RequestThreadProc(Boolean setThreadParameters) in Microsoft.Build.dll:token 0x600140b+0x7d
+===================
